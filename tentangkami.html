@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Telur Gulung</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #ffcc00;
+            padding: 20px;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            flex-wrap: wrap;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 0;
+            text-align: center; /* Center the heading */
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        .btn-nav {
+            text-decoration: none;
+            font-weight: bold;
+            color: #333;
+            background-color: #fff8d1;
+            padding: 8px 14px;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-nav.active {
+            background-color: #ffeb3b;
+        }
+
+        .btn-nav:hover {
+            background-color: #fff3a0;
+        }
+
+        /* Main Content */
+        main.tentang {
+            padding: 20px;
+        }
+
+        .content h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            color: #e67e22;
+            font-weight: bold;
+        }
+
+        .hero-img {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .content strong {
+            color: #e67e22;
+        }
+
+        .content em {
+            font-style: italic;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 10px;
+            }
+
+            .content h2 {
+                font-size: 24px;
+            }
+
+            .content p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <img src="images/logo.png" alt="Logo Telur Gulung" class="logo">
+            <h1>TelurGulung Business Project</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html" class="btn-nav">Beranda</a></li>
+                <li><a href="menu.html" class="btn-nav">Menu</a></li>
+                <li><a href="payment.html" class="btn-nav">Payment</a></li>
+                <li><a href="tentangkami.html" class="btn-nav active">Tentang Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="tentang">
+        <section class="content">
+            <h2>Selamat Datang di <span class="highlight">TelurGulung Business Project!</span></h2>
+            <img src="images/foto.png" alt="Telur Gulung" class="hero-img">
+            <p>
+                Kami adalah usaha kecil yang berdiri sejak tahun <strong>2025</strong> di <strong>Pekanbaru, Riau</strong>. 
+                Tujuan kami adalah untuk menyajikan camilan yang <strong>enak, renyah, gurih, dan berkualitas</strong> untuk semua kalangan.
+            </p>
+            <p>
+                Dengan bahan-bahan pilihan, kami menyajikan camilan yang menggugah selera. 
+                <strong>Telur Gulung</strong> kami digulung dengan teknik khusus agar tetap renyah di luar dan lembut di dalam, 
+                sementara <strong>Sosis Telur</strong> kami dipadukan dengan adonan gurih yang bikin ketagihan!
+            </p>
+            <p>
+                Misi kami sederhana: <em>menghadirkan kebahagiaan lewat makanan ringan yang murah meriah namun penuh rasa</em>. 
+                Kami percaya, <strong>senyum pelanggan adalah kepuasan kami</strong>.
+            </p>
+            <p>
+                Terima kasih telah mempercayakan camilanmu kepada kami. Yuk, buruan pesan dan nikmati 
+                sensasi <strong>Telur Gulung dan Sosis Telur</strong> favoritmu sekarang juga! 🥚🌭✨
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 <strong>TelurGulungin</strong>. Camilan Lezat, Harga Hemat.</p>
+    </footer>
+
+</body>
+</html>

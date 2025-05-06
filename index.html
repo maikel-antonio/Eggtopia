@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telur Gulung Business Project</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            background-color: #ffcc00;
+            padding: 10px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        .site-title {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        .nav-buttons {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .btn-nav {
+            text-decoration: none;
+            font-weight: bold;
+            color: #333;
+            background: #fff8d1;
+            padding: 8px 14px;
+            border-radius: 6px;
+            transition: background 0.3s;
+        }
+
+        .btn-nav:hover {
+            background-color: #fff3a0;
+        }
+
+        /* Banner */
+        .banner {
+            background: url('images/banner.jpg') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            background-color: #f4a261;
+        }
+
+        .banner-content h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            background-color: #e67e22;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #d35400;
+        }
+
+        /* Section Titles */
+        .section-title {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 28px;
+        }
+
+        /* Produk/Menu */
+        .produk {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 0 20px 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            padding: 15px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin-top: 10px;
+        }
+
+        /* Instagram */
+        .instagram-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Testimoni */
+        .testimoni-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0 20px 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .testimoni-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 15px 20px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+        }
+
+        .testimoni-card .nama {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .testimoni-card .tanggal {
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        .testimoni-card .pesan {
+            font-style: italic;
+        }
+
+        @media (max-width: 600px) {
+            .header-container {
+                flex-direction: column;
+            }
+            .nav-buttons {
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <img src="images/logo.png" alt="Logo Telur Gulung" class="logo">
+            <h1 class="site-title">Telur Gulung Business Project</h1>
+        </div>
+        <nav>
+            <ul class="nav-buttons">
+                <li><a href="home.html" class="btn-nav">Beranda</a></li>
+                <li><a href="menu.html" class="btn-nav">Menu</a></li>
+                <li><a href="payment.html" class="btn-nav">Payment</a></li>
+                <li><a href="tentangkami.html" class="btn-nav">Tentang Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="banner">
+        <div class="banner-content">
+            <h2>Rasakan Kelezatan Telur Gulung & Sosis Telur hanya di Telur Gulung Business Project</h2>
+            <p>Makanan ringan gurih dan lezat, cocok untuk semua momen.</p>
+            <a href="menu.html" class="btn">Lihat Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Favorit -->
+    <section class="menu">
+        <h2 class="section-title">Menu Favorit</h2>
+        <div class="produk">
+            <div class="card">
+                <img src="images/foto.png" alt="Telur Gulung">
+                <h3>Telur Gulung</h3>
+            </div>
+            <div class="card">
+                <img src="images/foto1.png" alt="Sosis Telur">
+                <h3>Sosis Telur</h3>
+            </div>
+            <div class="card">
+                <img src="images/foto2.png" alt="Sosis Telur Spesial">
+                <h3>Sosis Telur Spesial</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram -->
+    <section class="instagram">
+        <h2 class="section-title">Temui Kami di Instagram</h2>
+        <div class="instagram-container">
+            <blockquote class="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/eggzy.pku/"
+                data-instgrm-version="14"
+                style="background:#FFF; border:0; margin: 1px auto; max-width:540px; width:100%;">
+            </blockquote>
+            <script async src="//www.instagram.com/embed.js"></script>
+        </div>
+    </section>
+
+    <!-- Testimoni Pelanggan -->
+    <section class="testimoni">
+        <h2 class="section-title">Apa Kata Pelanggan?</h2>
+        <div class="testimoni-container">
+            <div class="testimoni-card">
+                <p class="nama"><strong>Felix Rivaldo</strong></p>
+                <p class="tanggal">02 April 2025</p>
+                <p class="pesan">"Enak sekali telur gulung sangat lezat dan makannya gak bikin nek."</p>
+            </div>
+            <div class="testimoni-card">
+                <p class="nama"><strong>Marsen Charsiva Wijaya</strong></p>
+                <p class="tanggal">02 April 2025</p>
+                <p class="pesan">"Telur gulungnya renyah di luar, lembut di dalam! Bumbunya pas banget, nagih bikin beli lagi."</p>
+            </div>
+            <div class="testimoni-card">
+                <p class="nama"><strong>Edward Novanto</strong></p>
+                <p class="tanggal">02 April 2025</p>
+                <p class="pesan">"Telur gulung enak cocok dimakan dimana pun."</p>
+            </div>
+            <div class="testimoni-card">
+                <p class="nama"><strong>Sugianto</strong></p>
+                <p class="tanggal">02 April 2025</p>
+                <p class="pesan">"Baru pertama kali coba telur gulung di sini, langsung jatuh cinta! Garingnya tahan lama, nggak lembek meski dibawa pulang."</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
